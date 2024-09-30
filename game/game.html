@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset = "UTF-8" />
+    <title>1</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../main.css">
+            <script type='text/javascript' async>
+    					function tick() {
+    						var years,days,hours, minutes, seconds;
+    						var openday = new Date('2022/5/21 01:28:22');
+    						var today = new Date(); //获取系统当前时间
+    						var total = (today.getTime()-openday.getTime())/1000;
+        						years=Math.floor(total/31536000);
+        						total=total-years*31536000;
+        						days=Math.floor(total/86400);
+        						total=total-days*86400;
+        						hours=Math.floor(total/3600);
+        						total=total-hours*3600;
+        						minutes=Math.floor(total/60);
+        						total=total-minutes*60;
+        						seconds=Math.floor(total);
+        						timeString = "[ 不知不觉已经运行了: "+years+"年 "+days+"天 "+hours+"时 "+minutes+"分 "+seconds+"秒 ]";
+    						document.getElementById("Clock").innerHTML = timeString;
+    						window.setTimeout("tick();", 1000);
+    						}
+    						window.onload = tick;
+    	</script>
+    
+    <style type = "text/css">
+            #footer {
+            	background: var(--themecolor-gradient);
+            	color: #fff;
+            	width: 70%;
+            	float: right;
+            	text-align: center;
+            	line-height: 1.8;
+            	background-color: rgba( 240, 240, 240, 0.75);/*背景色透明度*/
+            	border-radius: 24px;/*圆角*/
+            	position: absolute;
+                top: 76%;
+                right: 13.8%;
+            	padding: 10px 20px 30px 20px;
+                }
+            #footer a {
+                	color: #fff;
+                }
+            .bTxt{
+                color: #b46c78;
+                size: 16px;
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="p0" onclick="move(this)"></div>
+        <div id="p1" onclick="move(this)"></div>
+        <div id="p2" onclick="move(this)"></div>
+        <div id="p3" onclick="move(this)"></div>
+        <div id="p4" onclick="move(this)"></div>
+        <div id="p5" onclick="move(this)"></div>
+        <div id="p6" onclick="move(this)"></div>
+        <div id="p7" onclick="move(this)"></div>
+        <div id="p8" onclick="move(this)"></div>
+    </div>
+        <footer id="footer">
+        <br />
+        
+            <div class="hitokoto bgc" style=" line-height: 20px;font-size: 15pt;font-weight: bold;color: rgb(200, 80, 80);">
+                <span>
+                    一切的问题都是态度问题。
+                </span>
+            </div>
+        <!--<p id="hitokoto">别人总是以为你什么都有，但只有你自己知道你只有你自己.</p>-->
+                <p style="color: rgb(210, 55, 100);margin-left: 10rem;font-size: 11pt;">
+                    <strong class="bgc">———Create By 绫_N</strong>
+                </p> 
+                
+				<span class="bgc" id="Clock" style=" line-height: 20px;font-size: 13pt;font-weight: bold;color: rgb(60, 60, 60);"></span>
+                
+        </footer>
+    <span id="Clock"></span>
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>绫_N</title>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Cache-Control" content="no-transform">
+        <meta http-equiv="Cache-Control" content="no-siteapp">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="description" content="绫的主页">
+        <link rel="stylesheet" href="font-awesome.css">
+        <link rel="icon" type="image/x-icon" href="index.ico">
+        <link rel="stylesheet" href="main.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/aplayer.min.js"></script>
+        <script type='text/javascript' async>
+    					function tick() {
+    						var years,days,hours, minutes, seconds;
+    						var openday = new Date('2022/5/21 01:28:22');
+    						var today = new Date(); //获取系统当前时间
+    						var total = (today.getTime()-openday.getTime())/1000;
+        						years=Math.floor(total/31536000);
+        						total=total-years*31536000;
+        						days=Math.floor(total/86400);
+        						total=total-days*86400;
+        						hours=Math.floor(total/3600);
+        						total=total-hours*3600;
+        						minutes=Math.floor(total/60);
+        						total=total-minutes*60;
+        						seconds=Math.floor(total);
+        						timeString = "[ 不知不觉已经运行了: "+years+"年 "+days+"天 "+hours+"时 "+minutes+"分 "+seconds+"秒 ]";
+    						document.getElementById("Clock").innerHTML = timeString;
+    						window.setTimeout("tick();", 1000);
+    						}
+    						window.onload = tick;
+    	</script>
+        
+        <style type="text/css">
+            a:link {
+    				color:#3a3a3a;
+    				} /* 未访问链接*/ 
+    		a:visited {
+    				color:#7e7e7e;
+    				} /* 已访问链接 */ 
+    		a:hover {
+    				color:#e47979;
+    				} /* 鼠标移动到链接上 */ 
+    		a:active {
+    				color:#a40202;
+    				} /* 鼠标点击时 */
+    		.bgc{
+    		    /*background-color: rgba( 200, 200, 200, 0.6);*/
+    		}
+    		
+            /* 弹窗样式 */
+            .modal {
+              display: none;
+              position: fixed;
+              z-index: 1;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              overflow: auto;
+              background-color: rgba(0, 0, 0, 0.6);
+            }
+            
+            /* 图片样式 */
+            .modal-content {
+              margin: 6% auto;
+              display: block;
+              max-width: 80%;
+              max-height: 80%;
+            }
+            
+            /* 关闭按钮样式 */
+            .close {
+              color: white;
+              position: absolute;
+              top: 10px;
+              right: 25px;
+              font-size: 35px;
+              font-weight: bold;
+              cursor: pointer;
+            }
+            
+    		/*--------------------------------------------*/
+    		
+    		#footer {
+            	background: var(--themecolor-gradient);
+            	color: #fff;
+            	width: 100%;
+            	float: right;
+            	margin-bottom: 10px;
+            	text-align: center;
+            	padding: 15px 20px 15px 20px;
+            	line-height: 1.8;
+            	background-color: rgba( 240, 240, 240, 0.75);/*背景色透明度*/
+            	border-radius: 24px;/*圆角*/
+                }
+            #footer a{
+                	color: #333;
+                	font-size: 14pt;
+                	font-weight: bold;
+                }
+            #footer span span{
+                color: #333;
+                font-weight: bold;
+            }
+            .bTxt{
+                color: #b46c78;
+                size: 18px;
+            }
+        </style>
+  </head>
+
+  <body>
+    <script>
+        var picnum = parseInt(Math.random()*11+1);//获取背景图随机数
+        document.write('<div class="bak" style="background-image: url(img/'+picnum+'.jpg);"></div>');
+    </script>
+    
+    <main>
+        <div class="content">
+            <div class="left">
+                <div class="avatar">
+                    <img src="head.png">
+                </div>
+                <ul class="menu">
+                    <li>
+                        <a goto="#home" class="active">简介</a>
+                    </li>
+                    <li>
+                        <a goto="#contact">链接</a>
+                    </li>
+                    <li>
+                        <a goto="#donate">求助</a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    Made with by 绫
+                </div>
+            </div>
+            <div class="right">
+                <section id="home" class="active">
+                    <h1><b style="color : rgb(216,178,173)">绫_N</b></h1>
+                    <p>
+                        我，绫_N，一只菜鸡<br>
+                        苦逼的生活打工人 / 四川老汉<br>
+                        <del>没啥特长</del> 特长吃喝拉撒 / 宅 /
+                        <del><b>变态 loli控</b></del> / 2.5次元 <br>
+                         少女心 / 绘画 / 电子设备 / 崩崩崩<br>
+                        宫崎骏 / 新海诚 / 京阿尼 <br /><br />
+                        <b class="bTxt">
+                            "无人扶我青云志,我自踏雪至山巅"
+                        </b>
+                    </p>
+                        <hr align = "center" size = "2px">
+                        <br />
+                        <b class="bTxt">
+                            日复一日,必有精进.
+                        </b>
+                        <br />
+                        <span>『<b class="bTxt"> 人生即是到来、相遇、陪伴、离开 </b>』</span>
+                        
+                        <!--<p><script src="http://api.ip33.com/ip/show"></script></p>-->
+                </section>
+                <section id="contact">
+                    <div class="">
+                        <a href="https://blog.hoyolili.top" target="_blank" rel="noopener">
+                        <svg t="1694672152751" class="icon" viewBox="0 0 1042 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5196" width="32" height="32"><path d="M682.057143 310.857143h-256v73.142857h219.428571v493.714286h-493.714285V384h128v-73.142857h-164.571429c-20.114286 0-36.571429 16.457143-36.571429 36.571428v566.857143c0 20.114286 16.457143 36.571429 36.571429 36.571429h566.857143c20.114286 0 36.571429-16.457143 36.571428-36.571429V347.428571c0-20.114286-16.457143-36.571429-36.571428-36.571428z" p-id="5197"></path><path d="M919.771429 73.142857h-566.857143c-20.114286 0-36.571429 16.457143-36.571429 36.571429v566.857143c0 20.114286 16.457143 36.571429 36.571429 36.571428h256v-73.142857h-219.428572V146.285714h493.714286v493.714286h-128v73.142857h164.571429c20.114286 0 36.571429-16.457143 36.571428-36.571428V109.714286c0-20.114286-16.457143-36.571429-36.571428-36.571429z" p-id="5198"></path></svg>
+							<font size="8pt">
+							   <span>Blog</span>
+							</font>
+                        </a>
+                        <br />
+                        <a href="./kurukuru.html" target="_blank" rel="noopener">
+                            <svg t="1694671429384" class="icon" viewBox="0 0 1042 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4550" width="32" height="32">
+                                <path d="M795.428571 475.428571H245.028571c-69.485714 0-126.171429-56.685714-126.171428-126.171428v-5.485714c0-69.485714 56.685714-126.171429 126.171428-126.171429h475.428572l-49.371429 45.714286 49.371429 53.028571 117.028571-109.714286c14.628571-12.8 16.457143-36.571429 1.828572-51.2L731.428571 36.571429l-54.857142 49.371428 51.2 56.685714H243.2c-109.714286 0-199.314286 89.6-199.314286 199.314286v5.485714c0 109.714286 89.6 199.314286 199.314286 199.314286h550.4c69.485714 0 126.171429 56.685714 126.171429 126.171429v5.485714c0 69.485714-56.685714 126.171429-126.171429 126.171429h-475.428571l49.371428-45.714286-49.371428-53.028572-117.028572 109.714286c-14.628571 12.8-16.457143 36.571429-1.828571 51.2l107.885714 118.857143 54.857143-49.371429-51.2-56.685714h484.571428c109.714286 0 199.314286-89.6 199.314286-199.314286v-5.485714c0-109.714286-89.6-199.314286-199.314286-199.314286z" p-id="4551"></path>
+                                </svg>
+							<font size="5pt">
+							   <span>kurukuru！</span>
+							</font>
+                        </a>
+                        <br />
+                        <a href="./klee.html" target="_blank" rel="noopener">
+                            <svg t="1694671553474" class="icon" viewBox="0 0 1042 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4693" width="32" height="32"><path d="M960 84.114286c-9.142857-9.142857-23.771429-12.8-38.4-9.142857l-841.142857 294.4c-14.628571 5.485714-23.771429 18.285714-23.771429 32.914285s7.314286 29.257143 21.942857 34.742857l365.714286 162.742858 162.742857 365.714285c5.485714 12.8 18.285714 21.942857 32.914286 21.942857h1.828571c14.628571 0 27.428571-10.971429 32.914286-23.771428L969.142857 122.514286c3.657143-14.628571 1.828571-29.257143-9.142857-38.4z m-768 320l603.428571-210.285715-330.971428 330.971429-272.457143-120.685714z m444.342857 444.342857l-120.685714-270.628572 330.971428-330.971428-210.285714 601.6z" p-id="4694"></path>
+                            </svg>
+							<font size="5pt">
+							   <span>klee！</span>
+							</font>
+                        </a>
+                        <br />
+                        <a href="http://pan.hoyolili.top" target="_blank" rel="noopener">
+                            <svg t="1694672631729" class="icon" viewBox="0 0 1042 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5555" width="32" height="32"><path d="M938.057143 256h-164.571429v-73.142857c0-18.285714-12.8-32.914286-29.257143-36.571429l-384-73.142857c-5.485714-1.828571-12.8 0-18.285714 1.828572l-237.714286 73.142857c-14.628571 5.485714-25.6 18.285714-25.6 34.742857v731.428571c0 20.114286 16.457143 36.571429 36.571429 36.571429h621.714286c20.114286 0 36.571429-16.457143 36.571428-36.571429v-73.142857h164.571429c20.114286 0 36.571429-16.457143 36.571428-36.571428V292.571429c0-20.114286-16.457143-36.571429-36.571428-36.571429z m-365.714286 512V329.142857h54.857143v438.857143h-54.857143z m128-438.857143h73.142857v438.857143h-73.142857V329.142857z m-384-170.057143V310.857143h-164.571428v-100.571429l164.571428-51.2zM151.771429 384h164.571428v493.714286h-164.571428V384z m548.571428 493.714286h-310.857143V153.6l310.857143 58.514286v42.057143h-164.571428c-20.114286 0-36.571429 16.457143-36.571429 36.571428v512c0 20.114286 16.457143 36.571429 36.571429 36.571429h164.571428V877.714286z m201.142857-109.714286h-54.857143V329.142857h54.857143v438.857143z" p-id="5556"></path></svg>
+							<font size="5pt">
+							   <span>网盘</span>
+							</font>
+                        </a>
+                        <br />
+                        <a href="./game/game.html" target="_blank" rel="noopener">
+                            <svg t="1695887631507" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4181" width="32" height="32"><path d="M919.272727 814.545455V209.454545a11.636364 11.636364 0 0 0-11.636363-11.636363H116.363636a11.636364 11.636364 0 0 0-11.636363 11.636363v605.09091a11.636364 11.636364 0 0 0 11.636363 11.636363h50.548364a11.636364 11.636364 0 0 0 8.215273-3.397818l135.656727-135.656727a81.454545 81.454545 0 0 1 57.576727-23.854546h287.278546a81.454545 81.454545 0 0 1 57.576727 23.854546l135.656727 135.656727a11.636364 11.636364 0 0 0 8.215273 3.397818H907.636364a11.636364 11.636364 0 0 0 11.636363-11.636363z m-62.184727 81.454545a81.454545 81.454545 0 0 1-57.576727-23.854545l-135.656728-135.656728a11.636364 11.636364 0 0 0-8.215272-3.397818H368.360727a11.636364 11.636364 0 0 0-8.215272 3.397818l-135.656728 135.656728A81.454545 81.454545 0 0 1 166.912 896H116.363636A81.454545 81.454545 0 0 1 34.909091 814.545455V209.454545A81.454545 81.454545 0 0 1 116.363636 128h791.272728A81.454545 81.454545 0 0 1 989.090909 209.454545v605.09091a81.454545 81.454545 0 0 1-81.454545 81.454545h-50.548364z" fill="#5F6FEE" p-id="4182"></path><path d="M302.545455 570.181818a128 128 0 1 1 0-256 128 128 0 0 1 0 256z m0-69.818182a58.181818 58.181818 0 1 0 0-116.363636 58.181818 58.181818 0 0 0 0 116.363636z" fill="#5F6FEE" p-id="4183"></path><path d="M800.32785 302.30324m24.684455 24.684455l0 0q24.684455 24.684455 0 49.36891l-181.019336 181.019336q-24.684455 24.684455-49.36891 0l0 0q-24.684455-24.684455 0-49.36891l181.019336-181.019336q24.684455-24.684455 49.36891 0Z" fill="#5F6FEE" p-id="4184"></path><path d="M569.939604 351.67215m24.684455-24.684455l0 0q24.684455-24.684455 49.36891 0l181.019336 181.019336q24.684455 24.684455 0 49.36891l0 0q-24.684455 24.684455-49.36891 0l-181.019336-181.019336q-24.684455-24.684455 0-49.36891Z" fill="#5F6FEE" p-id="4185"></path></svg>
+							<font size="5pt">
+							   <span>小游戏</span>
+							</font>
+                        </a>
+                        <br />
+                    </div>
+                </section>
+                <section id="donate">
+                    <h1>拯救吃土的 绫</h1>
+                    <p>
+                        <br>
+                        贫穷限制了我的想象力，创造力，巧克力...<br />
+                        <del>上天啊来个富婆吧</del><br />
+						希望您来帮我摆脱贫穷。<br />
+                        <br />
+                        <a href="#" title="救救绫吧!(支付宝)" id="myLink">
+                            <font color="black" size="6pt">
+                                Bro, Could U Click HERE?
+                            </font>
+                        </a><br /><br />
+                        <a href="tencent://message/?uin=486494914">点击添加QQ好友</a>
+                    </p>
+                </section>
+                  <!-- 弹窗 -->
+                  <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                  </div>
+                <script>
+                    // 获取超链接和弹窗元素
+                    var link = document.getElementById("myLink");
+                    var modal = document.getElementById("myModal");
+                    var modalImg = document.getElementById("modalImg");
+                    var closeBtn = document.getElementsByClassName("close")[0];
+                    // 点击超链接时的事件处理
+                    link.onclick = function(event) {
+                      event.preventDefault(); // 阻止默认的超链接
+                      // 获取图片链接
+                      var imgSrc = "Alipay.jpg";
+                      modalImg.src = imgSrc;
+                      // 显示弹窗
+                      modal.style.display = "block";
+                    }// 点击关闭按钮时的事件处理
+                    closeBtn.onclick = function() {
+                      // 关闭弹窗
+                      modal.style.display = "none";
+                    }
+                </script>
+                
+            </div>
+        </div>
+        <footer id="footer">
+                <div class="hitokoto bgc" style=" line-height: 20px;font-size: 15pt;font-weight: bold;color: rgb(200, 80, 80);">
+                <span>
+                    <!--
+                    <span style="color: rgb(200, 80, 80); font-weight: bold;">
+                        <a href="#" id="hitokoto_text" style="color: rgb(200, 80, 80);font-size:18px;">
+                            "你所拥有的日常可能是别人万般难求的珍贵."
+                        </a>
+                    </span>
+                    -->
+                <script type='text/javascript' async>
+                $.get("https://v1.hitokoto.cn/",function(data,status){
+                    if (status == 'success'){
+                        $('.hitokoto').text(data.hitokoto);
+                    }else{
+                        $('.hitokoto').text('无人扶我青云志,我自踏雪至山巅.');
+                    }
+                });
+                </script>
+                </span>
+            </div>
+                <p style="color: rgb(210, 55, 100);margin-left: 10rem;font-size: 11pt;">
+                    <strong class="bgc">———Create By 绫_N from 一言API</strong>
+                </p>
+				<span class="bgc" id="Clock" style=" line-height: 20px;font-size: 13pt;font-weight: bold;color: rgb(60, 60, 60);"></span>
+                <br />
+                <span id="footerlink">
+                    <a href="./map.txt">站点地图</a><span> | </span>
+                    <a href="https://pan.hoyolili.top">镜像</a><span> | </span>
+                    <a href="https://run.hoyolili.com">网络探针</a>
+                    
+                </span>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+
+</html>
